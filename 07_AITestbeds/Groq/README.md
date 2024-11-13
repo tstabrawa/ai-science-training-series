@@ -39,7 +39,7 @@ conda activate groqflow
 ```bash
 git clone https://github.com/groq/groqflow.git
 # Alter this if you have cloned groqflow to some other location.
-cd groqflow
+cd ~/groqflow
 if [ -d "groqflow.egg-info" ]; then rm -r groqflow.egg-info; fi
 pip install --upgrade pip
 pip list --format=freeze > frozen.txt
@@ -116,18 +116,18 @@ Other flags that can be used
 
 ## Hands-on Example
 
-
-* [Bert](./bert.md)
+* [GPT-2](./gpt2.md)
 
 ## Homework
 
-Run BERT example with custom input instead of dummy input. 
+Run [MiniLM](./minilm.md) example with custom input instead of dummy input. Submit proof (contents printed out to your terminal, path to a logfile or screenshot) that you were able to successfully follow the instructions and execute.
 
 ## Additional Examples (Optional)
 
-* [ResNet50](./resnet50.md)
 * [MiniLMv2](./minilm.md)
-<!-- * * [GPT2](./gpt2.md) -->
+* [ResNet50](./resnet50.md)
+* [Bert](./bert.md)
+
 
 ## Useful Resources 
 
