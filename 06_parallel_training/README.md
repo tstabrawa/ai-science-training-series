@@ -108,6 +108,8 @@ Where _proof_ can be any of:
 - url to a W&B Run or [W&B Report](https://api.wandb.ai/links/aurora_gpt/7du35js1)
 - etc.
 
+### Proof of completion:
 
+- [Log file from distributed data parallel training run](HW6.txt)
 
 <!--[^gpu]: If you do not have access to the ALCF systems, you can install [OpenMPI](https://docs.open-mpi.org/en/v5.0.x/) and run across multiple CPUs as well-->
