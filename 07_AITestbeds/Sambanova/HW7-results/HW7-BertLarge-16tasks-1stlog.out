@@ -1,0 +1,1306 @@
+Model:  BertLarge
+Date:  11/21/24
+Time:  22:10
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Listing...
+sambaflow/focal,now 1.19.1-44 amd64 [installed,upgradable to: 1.22.1-35]
+Machine State Before: 
+Platform: DataScale SN30-8
+
+Physical Inventory:
+Component Name                        | Serial Number       | Inventory State | Functional State
+------------------------------------------------------------------------------------------------
+/NODE/XRDU_0/RDU_0                    | 105050356D2D5895    | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_0/DIMM_A0    | 1F6F8DE             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_1/DIMM_B0    | 1F6F677             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_2/DIMM_E0    | 1F6F8BE             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_3/DIMM_F0    | 1F5BC7F             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_4/DIMM_G0    | 1F5BC2F             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_5/DIMM_H0    | 1F5BC79             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_6/DIMM_C0    | 1F5BC2E             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_7/DIMM_D0    | 1F5BC78             | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1                    | 407008356D2D5895    | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_0/DIMM_J0    | 1F6F844             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_1/DIMM_K0    | 1F6F59F             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_2/DIMM_N0    | 1F6F8B3             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_3/DIMM_P0    | 1F6F687             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_4/DIMM_Q0    | 1F6F7C4             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_5/DIMM_R0    | 1F6F7D0             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_6/DIMM_L0    | 1F6F605             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_7/DIMM_M0    | 1F6F64B             | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_0/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0                    | 506032B16ABDB895    | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_0/DIMM_A0    | 1F6F8E1             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_1/DIMM_B0    | 1F6F814             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_2/DIMM_E0    | 1F6F80B             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_3/DIMM_F0    | 1F6F7A8             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_4/DIMM_G0    | 1F6F78D             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_5/DIMM_H0    | 1F6F664             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_6/DIMM_C0    | 1F6F6D8             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_7/DIMM_D0    | 1F6F71F             | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1                    | 304872B16ABDB895    | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_0/DIMM_J0    | 1F6F887             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_1/DIMM_K0    | 1F6F7D5             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_2/DIMM_N0    | 1F6F654             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_3/DIMM_P0    | 1F6F675             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_4/DIMM_Q0    | 1F6F72A             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_5/DIMM_R0    | 1F6F73B             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_6/DIMM_L0    | 1F6F7A2             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_7/DIMM_M0    | 1F6F6F0             | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_1/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0                    | 605022B16ABDB895    | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_0/DIMM_A0    | 3427953             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_1/DIMM_B0    | 3427572             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_2/DIMM_E0    | 3427501             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_3/DIMM_F0    | 3427929             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_4/DIMM_G0    | 34279C1             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_5/DIMM_H0    | 34279CC             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_6/DIMM_C0    | 3427490             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_7/DIMM_D0    | 34279C2             | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1                    | 507036B16ABDB895    | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_0/DIMM_J0    | 34275D4             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_1/DIMM_K0    | 3427A3D             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_2/DIMM_N0    | 342746D             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_3/DIMM_P0    | 3427A5F             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_4/DIMM_Q0    | 3427A59             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_5/DIMM_R0    | 34274F9             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_6/DIMM_L0    | 34279A7             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_7/DIMM_M0    | 34274FE             | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_2/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0                    | 10286B316ABDB895    | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_0/DIMM_A0    | 1F5BD73             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_1/DIMM_B0    | 1F5BBB5             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_2/DIMM_E0    | 1F5BBA9             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_3/DIMM_F0    | 1F5BD04             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_4/DIMM_G0    | 1F5BBA8             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_5/DIMM_H0    | 1F5BD0A             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_6/DIMM_C0    | 1F5BCFD             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_7/DIMM_D0    | 1F5BD09             | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1                    | 606012B16ABDB895    | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_0/DIMM_J0    | 1F5BB09             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_1/DIMM_K0    | 1F5BB01             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_2/DIMM_N0    | 1F5BB62             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_3/DIMM_P0    | 1F5BB3C             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_4/DIMM_Q0    | 1F5BC92             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_5/DIMM_R0    | 1F5BAC0             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_6/DIMM_L0    | 1F5BBBC             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_7/DIMM_M0    | 1F5BB16             | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_3/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/HOST/HIC_0/DPORT                | N/A                 | Present         | Online       
+/NODE/HOST/HIC_1/DPORT                | N/A                 | Present         | Online       
+/NODE/HOST/HIC_2/DPORT                | N/A                 | Present         | Online       
+/NODE/HOST/HIC_3/DPORT                | N/A                 | Present         | Online
+COMPILE START AT 0
+COMPILE COMMAND: python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py compile --model_name_or_path bert-large-uncased --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns  --max_seq_length 128 --per_device_train_batch_size 256 -b 256 --output_dir=/home/stabrawa/BertLarge/hf_output --overwrite_output_dir --cache_dir /home/stabrawa/BertLarge/cache --compiler-configs-file /opt/sambaflow/apps/nlp/transformers_on_rdu/human_decisions/compiler_configs/compiler_configs_bertlarge_sc_mlm_ml_perf_fullfeature_macv2_gm.json --mac-human-decision /opt/sambaflow/apps/nlp/transformers_on_rdu/human_decisions/mac_overrides/bertlarge_sc_training_mlm_ml_perf_fullfeature_macv2.json --mac-v2 --non_split_head --dense_adam --data-parallel -ws 2 --weight_decay 0.01 --max_grad_norm_clip 1.0 --adam_beta2 0.98 --num-tiles 4 --pef-name=bertlrg --output-folder=/home/stabrawa/BertLarge --log-level error --disable-strict-conversion
+/opt/sambanova/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py:209: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  np.bool8: (False, True),
+/opt/sambanova/lib/python3.8/site-packages/flatbuffers/compat.py:19: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/opt/sambanova/lib/python3.8/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:326: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  np.bool8: (False, True),
+/opt/sambanova/lib/python3.8/site-packages/modelbox/__init__.py:1: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.1.0/migration/
+  from sambaflow import samba
+/opt/sambanova/lib/python3.8/site-packages/pydantic/main.py:913: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.1.0/migration/
+  warnings.warn('The `dict` method is deprecated; use `model_dump` instead.', DeprecationWarning)
+/opt/sambaflow/apps/nlp/transformers_on_rdu/tasks/utils/patched_functions.py:2029: DeprecationWarning: invalid escape sequence \.
+  tensor_names = ["attn\.c_attn\.weight", "attn\.c_proj\.weight", "mlp\.c_fc\.weight", "mlp\.c_proj\.weight"]
+PyTorch version 2.0.1+cpu available.
+TensorFlow version 2.7.0 available.
+2024-11-21 22:10:31,671 - apps.__main__ - Rank 0, PID 904175 - info     - NLP app started.
+Downloading:   0%|          | 0.00/571 [00:00<?, ?B/s]Downloading: 100%|██████████| 571/571 [00:00<00:00, 257kB/s]
+2024-11-21 22:10:31,790 - apps.tasks.utils.lazy_gpt2_pretrain - Rank 0, PID 904175 - info     - Patching gpt2 hf model attr 'GPT2PreTrainedModel._init_weights'
+2024-11-21 22:10:31,790 - apps.tasks.utils.lazy_gpt2_pretrain - Rank 0, PID 904175 - info     - Patching mlm_ns hf model attr 'BertPreTrainedModel._init_weights'
+Downloading:   0%|          | 0.00/1.34G [00:00<?, ?B/s]Downloading:   1%|          | 11.8M/1.34G [00:00<00:11, 118MB/s]Downloading:   2%|▏         | 24.7M/1.34G [00:00<00:10, 121MB/s]Downloading:   3%|▎         | 37.5M/1.34G [00:00<00:10, 123MB/s]Downloading:   4%|▎         | 50.0M/1.34G [00:00<00:10, 124MB/s]Downloading:   5%|▍         | 63.6M/1.34G [00:00<00:10, 127MB/s]Downloading:   6%|▌         | 77.0M/1.34G [00:00<00:09, 129MB/s]Downloading:   7%|▋         | 90.5M/1.34G [00:00<00:09, 131MB/s]Downloading:   8%|▊         | 104M/1.34G [00:00<00:09, 132MB/s] Downloading:   9%|▊         | 117M/1.34G [00:00<00:09, 133MB/s]Downloading:  10%|▉         | 131M/1.34G [00:01<00:09, 133MB/s]Downloading:  11%|█         | 144M/1.34G [00:01<00:08, 134MB/s]Downloading:  12%|█▏        | 158M/1.34G [00:01<00:08, 134MB/s]Downloading:  13%|█▎        | 171M/1.34G [00:01<00:08, 134MB/s]Downloading:  14%|█▎        | 185M/1.34G [00:01<00:08, 135MB/s]Downloading:  15%|█▍        | 198M/1.34G [00:01<00:08, 135MB/s]Downloading:  16%|█▌        | 212M/1.34G [00:01<00:08, 135MB/s]Downloading:  17%|█▋        | 225M/1.34G [00:01<00:08, 135MB/s]Downloading:  18%|█▊        | 239M/1.34G [00:01<00:08, 135MB/s]Downloading:  19%|█▉        | 252M/1.34G [00:01<00:08, 135MB/s]Downloading:  20%|█▉        | 266M/1.34G [00:02<00:07, 135MB/s]Downloading:  21%|██        | 280M/1.34G [00:02<00:07, 135MB/s]Downloading:  22%|██▏       | 293M/1.34G [00:02<00:07, 135MB/s]Downloading:  23%|██▎       | 307M/1.34G [00:02<00:07, 135MB/s]Downloading:  24%|██▍       | 320M/1.34G [00:02<00:07, 135MB/s]Downloading:  25%|██▍       | 334M/1.34G [00:02<00:07, 134MB/s]Downloading:  26%|██▌       | 347M/1.34G [00:02<00:07, 134MB/s]Downloading:  27%|██▋       | 361M/1.34G [00:02<00:07, 134MB/s]Downloading:  28%|██▊       | 374M/1.34G [00:02<00:07, 134MB/s]Downloading:  29%|██▉       | 388M/1.34G [00:02<00:07, 135MB/s]Downloading:  30%|██▉       | 401M/1.34G [00:03<00:06, 135MB/s]Downloading:  31%|███       | 415M/1.34G [00:03<00:06, 135MB/s]Downloading:  32%|███▏      | 428M/1.34G [00:03<00:06, 135MB/s]Downloading:  33%|███▎      | 442M/1.34G [00:03<00:06, 131MB/s]Downloading:  34%|███▍      | 455M/1.34G [00:03<00:06, 132MB/s]Downloading:  35%|███▍      | 469M/1.34G [00:03<00:06, 133MB/s]Downloading:  36%|███▌      | 482M/1.34G [00:03<00:06, 133MB/s]Downloading:  37%|███▋      | 496M/1.34G [00:03<00:06, 134MB/s]Downloading:  38%|███▊      | 509M/1.34G [00:03<00:06, 134MB/s]Downloading:  39%|███▉      | 523M/1.34G [00:03<00:06, 134MB/s]Downloading:  40%|███▉      | 536M/1.34G [00:04<00:06, 133MB/s]Downloading:  41%|████      | 550M/1.34G [00:04<00:05, 134MB/s]Downloading:  42%|████▏     | 563M/1.34G [00:04<00:05, 134MB/s]Downloading:  43%|████▎     | 577M/1.34G [00:04<00:05, 135MB/s]Downloading:  44%|████▍     | 591M/1.34G [00:04<00:05, 136MB/s]Downloading:  45%|████▍     | 604M/1.34G [00:04<00:05, 136MB/s]Downloading:  46%|████▌     | 618M/1.34G [00:04<00:05, 137MB/s]Downloading:  47%|████▋     | 632M/1.34G [00:04<00:05, 137MB/s]Downloading:  48%|████▊     | 646M/1.34G [00:04<00:05, 138MB/s]Downloading:  49%|████▉     | 660M/1.34G [00:04<00:04, 138MB/s]Downloading:  50%|█████     | 674M/1.34G [00:05<00:04, 138MB/s]Downloading:  51%|█████     | 688M/1.34G [00:05<00:04, 139MB/s]Downloading:  52%|█████▏    | 701M/1.34G [00:05<00:04, 139MB/s]Downloading:  53%|█████▎    | 715M/1.34G [00:05<00:04, 139MB/s]Downloading:  54%|█████▍    | 729M/1.34G [00:05<00:04, 139MB/s]Downloading:  55%|█████▌    | 743M/1.34G [00:05<00:04, 138MB/s]Downloading:  56%|█████▋    | 757M/1.34G [00:05<00:04, 138MB/s]Downloading:  57%|█████▋    | 771M/1.34G [00:05<00:04, 138MB/s]Downloading:  58%|█████▊    | 785M/1.34G [00:05<00:04, 139MB/s]Downloading:  59%|█████▉    | 799M/1.34G [00:05<00:03, 139MB/s]Downloading:  60%|██████    | 813M/1.34G [00:06<00:03, 139MB/s]Downloading:  61%|██████▏   | 826M/1.34G [00:06<00:03, 139MB/s]Downloading:  62%|██████▏   | 840M/1.34G [00:06<00:03, 139MB/s]Downloading:  64%|██████▎   | 854M/1.34G [00:06<00:03, 138MB/s]Downloading:  65%|██████▍   | 868M/1.34G [00:06<00:03, 139MB/s]Downloading:  66%|██████▌   | 882M/1.34G [00:06<00:03, 137MB/s]Downloading:  67%|██████▋   | 896M/1.34G [00:06<00:03, 138MB/s]Downloading:  68%|██████▊   | 910M/1.34G [00:06<00:03, 138MB/s]Downloading:  69%|██████▊   | 924M/1.34G [00:06<00:03, 138MB/s]Downloading:  70%|██████▉   | 937M/1.34G [00:06<00:02, 138MB/s]Downloading:  71%|███████   | 951M/1.34G [00:07<00:02, 138MB/s]Downloading:  72%|███████▏  | 965M/1.34G [00:07<00:02, 138MB/s]Downloading:  73%|███████▎  | 979M/1.34G [00:07<00:02, 137MB/s]Downloading:  74%|███████▍  | 993M/1.34G [00:07<00:02, 137MB/s]Downloading:  75%|███████▍  | 1.01G/1.34G [00:07<00:02, 136MB/s]Downloading:  76%|███████▌  | 1.02G/1.34G [00:07<00:02, 137MB/s]Downloading:  77%|███████▋  | 1.03G/1.34G [00:07<00:02, 137MB/s]Downloading:  78%|███████▊  | 1.05G/1.34G [00:07<00:02, 137MB/s]Downloading:  79%|███████▉  | 1.06G/1.34G [00:07<00:02, 137MB/s]Downloading:  80%|███████▉  | 1.07G/1.34G [00:07<00:01, 137MB/s]Downloading:  81%|████████  | 1.09G/1.34G [00:08<00:01, 138MB/s]Downloading:  82%|████████▏ | 1.10G/1.34G [00:08<00:01, 137MB/s]Downloading:  83%|████████▎ | 1.12G/1.34G [00:08<00:01, 137MB/s]Downloading:  84%|████████▍ | 1.13G/1.34G [00:08<00:01, 137MB/s]Downloading:  85%|████████▌ | 1.14G/1.34G [00:08<00:01, 136MB/s]Downloading:  86%|████████▌ | 1.16G/1.34G [00:08<00:01, 136MB/s]Downloading:  87%|████████▋ | 1.17G/1.34G [00:08<00:01, 135MB/s]Downloading:  88%|████████▊ | 1.18G/1.34G [00:08<00:01, 135MB/s]Downloading:  89%|████████▉ | 1.20G/1.34G [00:08<00:01, 134MB/s]Downloading:  90%|█████████ | 1.21G/1.34G [00:08<00:01, 134MB/s]Downloading:  91%|█████████ | 1.22G/1.34G [00:09<00:00, 133MB/s]Downloading:  92%|█████████▏| 1.24G/1.34G [00:09<00:00, 129MB/s]Downloading:  93%|█████████▎| 1.25G/1.34G [00:09<00:00, 130MB/s]Downloading:  94%|█████████▍| 1.26G/1.34G [00:09<00:00, 131MB/s]Downloading:  95%|█████████▍| 1.28G/1.34G [00:09<00:00, 131MB/s]Downloading:  96%|█████████▌| 1.29G/1.34G [00:09<00:00, 131MB/s]Downloading:  97%|█████████▋| 1.30G/1.34G [00:09<00:00, 131MB/s]Downloading:  98%|█████████▊| 1.32G/1.34G [00:09<00:00, 132MB/s]Downloading:  99%|█████████▉| 1.33G/1.34G [00:09<00:00, 131MB/s]Downloading: 100%|█████████▉| 1.34G/1.34G [00:09<00:00, 132MB/s]Downloading: 100%|██████████| 1.34G/1.34G [00:09<00:00, 135MB/s]
+2024-11-21 22:10:42,471 - py.warnings - Rank 0, PID 904175 - warning  - /opt/sambanova/lib/python3.8/site-packages/torch/nn/modules/module.py:572: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /scratch/jobs/31685244/debbuild/common/sambanova-deps-pytorch-2.0.1-1/torch/csrc/utils/python_arg_parser.cpp:363.)
+  elif param.grad_fn:
+
+Some weights of BertForPreTraining were not initialized from the model checkpoint at bert-large-uncased and are newly initialized: ['cls.predictions.decoder.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2024-11-21 22:10:44,954 - apps.tasks.utils.lazy_gpt2_pretrain - Rank 0, PID 904175 - warning  - This module is not supported under lazy param initialization: tasks.lm_tasks.bert_mlperf_lm.BertForMaskedLM.BertLMPredictionHead
+Downloading:   0%|          | 0.00/232k [00:00<?, ?B/s]Downloading: 100%|██████████| 232k/232k [00:00<00:00, 20.6MB/s]
+Downloading:   0%|          | 0.00/466k [00:00<?, ?B/s]Downloading: 100%|██████████| 466k/466k [00:00<00:00, 39.4MB/s]
+Downloading:   0%|          | 0.00/48.0 [00:00<?, ?B/s]Downloading: 100%|██████████| 48.0/48.0 [00:00<00:00, 90.6kB/s]
+2024-11-21 22:10:45,701 - py.warnings - Rank 0, PID 904175 - warning  - /opt/sambanova/lib/python3.8/site-packages/torch/optim/optimizer.py:514: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /scratch/jobs/31685244/debbuild/common/sambanova-deps-pytorch-2.0.1-1/torch/csrc/utils/python_arg_parser.cpp:363.)
+  if not self.defaults.get('differentiable', None) and not (param.is_leaf or param.retains_grad):
+
+2024-11-21 22:10:45,729 - apps.__main__ - Rank 0, PID 904175 - info     - Dataset is loading.
+2024-11-21 22:10:45,729 - apps.__main__ - Rank 0, PID 904175 - info     - Dataset has finished loading.
+2024-11-21 22:10:45,730 - apps.__main__ - Rank 0, PID 904175 - info     - transformers_hook app running in compile mode
+Log ID initialized to: [stabrawa][python][904175] at /var/log/sambaflow/runtime/sn.log
+2024-11-21 22:10:46,195 - py.warnings - Rank 0, PID 904175 - warning  - /opt/sambanova/lib/python3.8/site-packages/torch/overrides.py:1545: DeprecationWarning: Defining your `__torch_function__ as a plain method is deprecated and will be an error in future, please define it as a classmethod.
+  warnings.warn("Defining your `__torch_function__ as a plain method is deprecated and "
+
+2024-11-21 22:10:46,197 - py.warnings - Rank 0, PID 904175 - warning  - /opt/sambanova/lib/python3.8/site-packages/torch/nn/modules/linear.py:114: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /scratch/jobs/31685244/debbuild/common/sambanova-deps-pytorch-2.0.1-1/torch/csrc/utils/python_arg_parser.cpp:363.)
+  return F.linear(input, self.weight, self.bias)
+
+2024-11-21 22:10:46,199 - py.warnings - Rank 0, PID 904175 - warning  - /opt/sambanova/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py:291: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /scratch/jobs/31685244/debbuild/common/sambanova-deps-pytorch-2.0.1-1/torch/csrc/utils/python_arg_parser.cpp:363.)
+  attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+
+2024-11-21 22:10:46,333 - py.warnings - Rank 0, PID 904175 - warning  - /opt/sambanova/lib/python3.8/site-packages/torch/nn/modules/activation.py:359: UserWarning: Defining your `__torch_function__` as a plain method is deprecated and will be an error in future, please define it as a classmethod. (Triggered internally at /scratch/jobs/31685244/debbuild/common/sambanova-deps-pytorch-2.0.1-1/torch/csrc/utils/python_arg_parser.cpp:363.)
+  return torch.tanh(input)
+
+[info    ]: section boundary name: fwd_section_boundaries
+[info    ]: section type 1: 
+[info    ]: section boundary name: bwd_section_boundaries
+[info    ]: section type 1: 
+[info    ]: section boundary name: opt_section_boundaries
+[info    ]: section type 1: 
+[info    ]: section boundary name: fwd_naming_boundaries
+[info    ]: section type 1: 
+[info    ]: section boundary name: bwd_naming_boundaries
+[info    ]: section type 1: 
+[info    ]: Using legacy setting, GraphAMP pass will not run.
+[info    ]: Using legacy setting, GraphAMP Legalizer pass will not run.
+[warning ]: Cannot get AIRToTLIRInfo for op: module_terminator
+[warning ]: Cannot get AIRToTLIRInfo for op: module @partitions  {
+}
+[warning ]: Cannot get AIRToTLIRInfo for op: module_terminator
+[warning ]: Cannot get AIRToTLIRInfo for op: module @preface  {
+}
+[warning ]: Cannot get AIRToTLIRInfo for op: module_terminator
+[warning ]: Cannot get AIRToTLIRInfo for op: module @templates  {
+}
+[warning ]: DimensionMapping for %1615 = "air.Embedding"(%0, %1) {air.kEstimateToleranceLatency = -1.000000e+00 : f64, air.kEstimateToleranceUtilization = -1.000000e+00 : f64, air.kGraphAmpDeny = false, air.kWeightGroupID = -1 : i64, kConfigured = true, kDoConvTiling = false, kDoRecompute = false, kInputsNamedDims = [["bertformaskedlm__bert__embeddings__token_type_embeddings__embedding_weight_dim0", "bertformaskedlm__bert__embeddings__word_embeddings__embedding_weight_dim1"], ["next_sentence_label_dim_0", "input_ids_dim_1"]], kInternalAddressesSlicing = false, kIsBubbledRecomputeNode = false, kMacConsumerNames = [["bertformaskedlm__bert__embeddings__add_t_input1"]], kNodeCategory = 1 : i64, kOutputsNamedDims = [["next_sentence_label_dim_0", "input_ids_dim_1", "bertformaskedlm__bert__embeddings__word_embeddings__embedding_weight_dim1"]]} : (tensor<2x1024xbf16>, tensor<256x128xi32>) -> tensor<256x128x1024xbf16> is not supported!
+[info    ]: Building size named dims for graph hf_transformer_samba
+[warning ]: Skip the process of updating air op's inputs/outputs size named dims.
+[info    ]: Building nameddims for graph hf_transformer_samba
+[warning ]: Skip the process of updating air op's inputs/outputs named dims.
+[info    ]: Making Tensor Parallel Decisions for graph: hf_transformer_samba
+[info    ]: Analyze tiling for graph: hf_transformer_samba
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__bert__pooler__dense__linear_t_input0
+ inputs: {NamedTensor: shape {256, 1024} names: {next_sentence_label_dim_0, bertformaskedlm__bert__pooler__dense__weight_dim_1}}
+ outputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__bert__pooler__dense__weight_dim_1, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__bert__pooler__dense__linear
+ inputs: {NamedTensor: shape {1024, 1024} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, bertformaskedlm__bert__pooler__dense__linear_input_1_dim_1}, NamedTensor: shape {1024, 256} names: {bertformaskedlm__bert__pooler__dense__linear_input_1_dim_1, next_sentence_label_dim_0}, NamedTensor: shape {1024, 1} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__bert__pooler__activation__tanh
+ inputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__cls__seq_relationship__linear
+ inputs: {NamedTensor: shape {2, 1024} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, bertformaskedlm__cls__seq_relationship__linear_input_1_dim_1}, NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__linear_input_1_dim_1, next_sentence_label_dim_0}, NamedTensor: shape {2, 1} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {2, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__cls__seq_relationship__linear_t_output0
+ inputs: {NamedTensor: shape {2, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {256, 2} names: {next_sentence_label_dim_0, bertformaskedlm__cls__seq_relationship__weight_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__crossentropyloss_1
+ inputs: {NamedTensor: shape {256, 2} names: {next_sentence_label_dim_0, bertformaskedlm__crossentropyloss_1_num_classes}, NamedTensor: shape {256} names: {next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {256} names: {next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__crossentropyloss_swap_reshape
+ inputs: {NamedTensor: shape {256, 128} names: {next_sentence_label_dim_0, labels_dim_1}}
+ outputs: {NamedTensor: shape {32768} names: {bertformaskedlm__crossentropyloss_swap_reshape_output_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__crossentropyloss_swap_reshape_bwd
+ inputs: {NamedTensor: shape {32768} names: {bertformaskedlm__crossentropyloss_swap_reshape_output_dim_0}}
+ outputs: {NamedTensor: shape {256, 128} names: {next_sentence_label_dim_0, labels_dim_1}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__bert__pooler__dense__linear_t_input0_bwd
+ inputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__bert__pooler__dense__weight_dim_1, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {256, 1024} names: {next_sentence_label_dim_0, bertformaskedlm__bert__pooler__dense__weight_dim_1}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__bert__pooler__dense__linear_bwd_loss
+ inputs: {NamedTensor: shape {1024, 1024} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, bertformaskedlm__bert__pooler__dense__linear_input_1_dim_1}, NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__bert__pooler__dense__linear_input_1_dim_1, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__bert__pooler__activation__tanh_bwd
+ inputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}, NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__cls__seq_relationship__linear_bwd_loss
+ inputs: {NamedTensor: shape {2, 1024} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, bertformaskedlm__cls__seq_relationship__linear_input_1_dim_1}, NamedTensor: shape {2, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__linear_input_1_dim_1, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__cls__seq_relationship__linear_t_output0_bwd
+ inputs: {NamedTensor: shape {256, 2} names: {next_sentence_label_dim_0, bertformaskedlm__cls__seq_relationship__weight_dim_0}}
+ outputs: {NamedTensor: shape {2, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, next_sentence_label_dim_0}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__crossentropyloss_1_bwd_loss
+ inputs: {NamedTensor: shape {256, 2} names: {next_sentence_label_dim_0, bertformaskedlm__crossentropyloss_1_num_classes}, NamedTensor: shape {256} names: {next_sentence_label_dim_0}, NamedTensor: shape {256} names: {next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {256, 2} names: {next_sentence_label_dim_0, bertformaskedlm__crossentropyloss_1_num_classes}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__cls__seq_relationship__linear_bwd_weight
+ inputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__linear_input_1_dim_1, next_sentence_label_dim_0}, NamedTensor: shape {2, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {2, 1024} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, bertformaskedlm__cls__seq_relationship__linear_input_1_dim_1}, NamedTensor: shape {2, 1} names: {bertformaskedlm__cls__seq_relationship__weight_dim_0, bertformaskedlm__cls__seq_relationship__linear_bwd_weight_bias_output_size_1_dim}}
+[warning ]: Try to squeeze a unsqueezable dim next_sentence_label_dim_0 for op bertformaskedlm__bert__pooler__dense__linear_bwd_weight
+ inputs: {NamedTensor: shape {1024, 256} names: {bertformaskedlm__bert__pooler__dense__linear_input_1_dim_1, next_sentence_label_dim_0}, NamedTensor: shape {1024, 256} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, next_sentence_label_dim_0}}
+ outputs: {NamedTensor: shape {1024, 1024} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, bertformaskedlm__bert__pooler__dense__linear_input_1_dim_1}, NamedTensor: shape {1024, 1} names: {bertformaskedlm__cls__seq_relationship__weight_dim_1, bertformaskedlm__bert__pooler__dense__linear_bwd_weight_bias_output_size_1_dim}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, input_ids_dim_1}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__0__attention__self__query__weight_dim_0, input_ids_dim_1}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__0__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, input_ids_dim_1}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__0__attention__self__key__weight_dim_0, input_ids_dim_1}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__0__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__0__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__0__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, input_ids_dim_1}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__0__attention__self__value__weight_dim_0, input_ids_dim_1}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__0__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__1__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__0__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__1__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__0__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__1__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__0__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__1__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__1__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__1__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__0__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__1__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__0__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__1__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__2__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__1__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__2__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__1__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__2__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__1__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__2__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__2__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__2__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__1__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__2__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__1__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__2__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__3__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__2__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__3__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__2__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__3__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__2__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__3__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__3__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__3__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__2__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__3__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__2__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__3__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__4__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__3__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__4__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__3__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__4__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__3__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__4__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__4__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__4__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__3__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__4__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__3__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__4__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__5__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__4__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__5__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__4__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__5__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__4__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__5__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__5__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__5__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__4__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__5__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__4__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__5__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__6__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__5__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__6__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__5__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__6__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__5__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__6__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__6__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__6__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__5__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__6__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__5__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__6__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__7__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__6__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__7__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__6__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__7__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__6__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__7__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__7__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__7__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__6__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__7__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__6__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__7__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__8__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__7__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__8__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__7__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__8__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__7__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__8__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__8__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__8__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__7__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__8__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__7__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__8__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__9__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__8__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__9__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__8__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__9__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__8__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__9__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__9__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__9__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__8__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__9__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__8__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__9__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__10__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__9__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__10__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__9__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__10__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__9__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__10__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__10__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__10__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__9__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__10__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__9__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__10__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__11__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__10__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__11__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__10__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__11__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__10__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__11__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__11__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__11__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__10__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__11__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__10__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__11__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__12__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__11__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__12__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__11__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__12__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__11__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__12__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__12__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__12__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__11__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__12__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__11__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__12__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__13__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__12__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__13__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__12__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__13__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__12__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__13__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__13__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__13__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__12__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__13__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__12__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__13__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__14__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__13__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__14__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__13__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__14__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__13__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__14__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__14__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__14__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__13__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__14__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__13__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__14__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__15__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__14__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__15__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__14__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__15__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__14__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__15__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__15__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__15__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__14__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__15__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__14__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__15__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__16__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__15__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__16__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__15__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__16__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__15__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__16__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__16__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__16__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__15__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__16__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__15__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__16__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__17__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__16__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__17__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__16__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__17__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__16__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__17__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__17__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__17__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__16__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__17__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__16__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__17__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__18__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__17__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__18__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__17__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__18__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__17__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__18__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__18__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__18__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__17__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__18__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__17__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__18__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__19__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__18__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__19__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__18__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__19__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__18__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__19__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__19__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__19__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__18__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__19__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__18__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__19__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__20__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__19__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__20__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__19__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__20__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__19__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__20__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__20__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__20__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__19__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__20__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__19__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__20__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__21__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__20__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__21__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__20__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__21__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__20__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__21__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__21__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__21__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__20__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__21__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__20__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__21__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__22__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__21__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__22__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__21__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__22__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__21__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__22__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__22__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__22__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__21__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__22__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__21__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__22__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__23__attention__self__query__weight_dim_0, bertformaskedlm__bert__encoder__layer__22__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__23__attention__self__key__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__22__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__23__attention__self__key__weight_dim_0, bertformaskedlm__bert__encoder__layer__22__attention__self__matmul_dim_row}}
+[warning ]: Try to squeeze a unsqueezable dim bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_1 for op bertformaskedlm__bert__encoder__layer__23__attention__self__value__linear_t_output0_fused_reshape_bwd
+ inputs: {NamedTensor: shape {16, 64, 128} names: {bertformaskedlm__bert__encoder__layer__23__attention__self__query__linear_t_output0_fused_reshape_output_dim_1, bertformaskedlm__bert__encoder__layer__23__attention__self__value__linear_t_output0_fused_reshape_output_dim_2, bertformaskedlm__bert__encoder__layer__22__attention__self__matmul_dim_row}}
+ outputs: {NamedTensor: shape {1024, 128} names: {bertformaskedlm__bert__encoder__layer__23__attention__self__value__weight_dim_0, bertformaskedlm__bert__encoder__layer__22__attention__self__matmul_dim_row}}
+[info    ]: Mapping for graph/function: hf_transformer_samba
+[info    ]: Amortized resources overall: 4.490000e+02 PCUs, 7.020000e+02 PMUs, projected latency: 6.059891e-01 s, FLOPS: 1.220349e+02 T/s, DDR_BW: 6.484095e+01 GB/s
+[info    ]: Legalizing node resources...
+[warning ]: [LinearInputGradInfo] STOC Rounding enabled but the selected template does not support STOC Rounding
+[warning ]: [LinearInputGradInfo] STOC Rounding enabled but the selected template does not support STOC Rounding
+[info    ]: Lowering to TLIR succeeded.
+[info    ]: Not in hypersection mode. Can't convert/revert hyperpartitions
+[warning ]: Skipped checking for identical layout in weight region and grad regions of Adam optimizer.
+[info    ]: Compilation succeeded.
+[info    ]: Mac Compilation succeeded.
+2024-11-21 22:20:47,373 - apps.__main__ - Rank 0, PID 904175 - info     - NLP app finished
+import blocksparse tasks from _NamespacePath(['/opt/sambaflow/apps/nlp/transformers_on_rdu/blocksparse/common/tasks'])
+import blocksparse tasks from _NamespacePath(['/opt/sambaflow/apps/nlp/transformers_on_rdu/blocksparse/common/tasks'])
++ /opt/sambanova/llvm16/bin/clang++ -DAT_PARALLEL_OPENMP=1 -D_THP_CORE -I/opt/llvm12/include -I./ -I/opt/sambaflow/include -fvisibility=hidden -fno-exceptions -fno-rtti -Werror -Wall -Wno-reorder -Wno-conversion -Wno-sign-conversion -Wno-sign-compare -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-unused-variable -Wno-strict-aliasing -Wno-unused-local-typedefs -Wunreachable-code-aggressive -Wsometimes-uninitialized -Wconditional-uninitialized -Woverflow -Waddress-of-temporary -Wpointer-arith -Wimplicit -Wno-deprecated-declarations -Wbitfield-enum-conversion -Wno-unused-private-field -Wno-unused-but-set-variable -DSOURCE_PREFIX_LENGTH=84 -g -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Wno-unused-parameter -Wno-missing-field-initializers -Wno-write-strings -Wno-unknown-pragmas -Wno-missing-braces -fopenmp=libomp -std=gnu++17 -o HfTransformerSamba.cpp.o -c HfTransformerSamba.cpp
++ /opt/sambanova/llvm16/bin/clang++ -DAT_PARALLEL_OPENMP=1 -D_THP_CORE -I/opt/llvm12/include -I./ -I/opt/sambaflow/include -fvisibility=hidden -fno-exceptions -fno-rtti -Werror -Wall -Wno-reorder -Wno-conversion -Wno-sign-conversion -Wno-sign-compare -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-unused-variable -Wno-strict-aliasing -Wno-unused-local-typedefs -Wunreachable-code-aggressive -Wsometimes-uninitialized -Wconditional-uninitialized -Woverflow -Waddress-of-temporary -Wpointer-arith -Wimplicit -Wno-deprecated-declarations -Wbitfield-enum-conversion -Wno-unused-private-field -Wno-unused-but-set-variable -DSOURCE_PREFIX_LENGTH=84 -g -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Wno-unused-parameter -Wno-missing-field-initializers -Wno-write-strings -Wno-unknown-pragmas -Wno-missing-braces -fopenmp=libomp -std=gnu++17 -o TestHfTransformerSamba.cpp.o -c TestHfTransformerSamba.cpp
++ /opt/sambanova/llvm16/bin/clang++ -I/opt/llvm12/include -I./ -I/opt/sambaflow/include -fvisibility=hidden -fno-exceptions -fno-rtti -Werror -Wall -Wno-reorder -Wno-conversion -Wno-sign-conversion -Wno-sign-compare -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-unused-variable -Wno-strict-aliasing -Wno-unused-local-typedefs -Wunreachable-code-aggressive -Wsometimes-uninitialized -Wconditional-uninitialized -Woverflow -Waddress-of-temporary -Wpointer-arith -Wimplicit -Wno-deprecated-declarations -Wbitfield-enum-conversion -Wno-unused-private-field -Wno-unused-but-set-variable -DSOURCE_PREFIX_LENGTH=84 -g TestHfTransformerSamba.cpp.o HfTransformerSamba.cpp.o -o test_arc_bertlrg -L/opt/llvm12/lib -L/opt/sambaflow/lib -L/opt/sambaflow/lib64 -L/opt/sambanova/lib -L/opt/sambanova/lib64 -L/usr/local/lib -L/usr/local/lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -Wl,-rpath,/opt/llvm12/lib:/opt/sambaflow/lib:/opt/sambaflow/lib64:/opt/sambanova/lib:/opt/sambanova/lib64:/usr/local/lib:/usr/local/lib64:/usr/lib/x86_64-linux-gnu:/usr/lib64 -lLLVMSupport -lMLIRDialect -lMLIROptLib -lMLIRPass -lMLIRQuant -lMLIRStandard -lMLIRIR -lMLIRRewrite -lMLIRPDL -lMLIRPDLInterp -lMLIRTensor -lMLIRParser -lMLIRAnalysis -lMLIRTransforms -lMLIRTransformUtils -lMLIRLoopAnalysis -lMLIRControlFlowInterfaces -lMLIRSideEffectInterfaces -lMLIRViewLikeInterface -lMLIRAffine -lMLIRLoopLikeInterface -lMLIRSCF -lMLIRCallInterfaces -lMLIRPresburger -lMLIRCopyOpInterface -lMLIREDSC -lMLIRLinalg -lTemplates -lPrismPlasmaTemplates -lPrismPlasma -lPrismShared -lpef -lyaml-cpp -lCompilerShared -lMLIRDynamicWrapper -lRAIL -lRAILUtil -lisl -lTemplates -lMacCompiler -lArcCompiler -lArchSpec -lArchSpecCore -lomp -lpthread
++ set +x
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/schedule_global
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_SymbolChipAssignment
+[info    ]: [PASS] Running PlasmaIR003_LegalizeLocationAssignment
+[info    ]: [PASS] Running PlasmaIR004_SymbolAttributePropagation
+[info    ]: [PASS] Running PlasmaIR005_ClusterOptimizerShardingSymbols
+[info    ]: [PASS] Running PlasmaIR006_BuildDdrAndHostPools
+[info    ]: [PASS] Running PlasmaIR007_DdrAndHostSymbolAssignment
+[info    ]: [PASS] Running PlasmaIR008_SegmentGarbageCollection
+[info    ]: [PASS] Running PlasmaIR009_DdrAndHostBitfileAssignment
+[info    ]: [PASS] Running PlasmaIR010_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR011_LegalizeDataAllocation
+[info    ]: [PASS] Running PlasmaIR012_LegalizeSymbolOverlap
+[info    ]: [PASS] Running PlasmaIR013_HbmLogical2Physical
+[info    ]: [PASS] Running PlasmaIR014_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_0_0_.
+[info    ]: Compilation succeeded for partition_0_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_1_0_.
+[info    ]: Compilation succeeded for partition_1_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_2_0_.
+[info    ]: Compilation succeeded for partition_2_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_3_0_.
+[info    ]: Compilation succeeded for partition_3_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_4_0_.
+[info    ]: Compilation succeeded for partition_4_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_5_0_.
+[info    ]: Compilation succeeded for partition_5_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_6_0_.
+[info    ]: Compilation succeeded for partition_6_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_7_0_.
+[warning ]: Cannot predict latency of context HfTransformerSamba.partition_7_0_.naming_group_25_bertformaskedlm__crossentropyloss_1@kInputXVec_0. Please suppress the warning by explicitly annotate the latency with set_ctx_latency() in the TBufferContext
+../templates/src/templates/cross_entropy/rail/CrossEntropy.cpp:1535:0
+tbuffer: partition_7_0_.naming_group_25_tbuf2a_7_0_35055 HfTransformerSamba.cpp:48383:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 1 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phase1_R_max phase2_R_exp, rd1: phase_rd_dummy, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_7_0_.HfTransformerSamba.partition_7_0_.naming_group_25_bertformaskedlm__crossentropyloss_1.naming_group_25_bertformaskedlm__crossentropyloss_1_tbuf_tmp ../templates/src/templates/cross_entropy/rail/CrossEntropy.cpp:2142:0
+[info    ]: Compilation succeeded for partition_7_0_
+[warning ]: Buffer instrumentation not supported for read contexts that have already a PmuDataSink
+[warning ]: Buffer instrumentation not supported for read contexts that have already a PmuDataSink
+[warning ]: Buffer instrumentation not supported for read contexts that have already a PmuDataSink
+[warning ]: Buffer instrumentation not supported for read contexts that have already a PmuDataSink
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_8_0_.
+[warning ]: You have created a transposed access but are not respecting slotting rules so there will be a performance drop!
+../compiler/rail/src/lib/node/tbuffer/TBufferContext.cpp:349:0
+ctx: kDefaultRead1 ../compiler/rail/src/lib/node/tbuffer/TBufferContext.cpp:349:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_8_0_.naming_group_26_tbuf2a_8_0_35164 HfTransformerSamba.cpp:48701:0
+[warning ]: Injecting transpose slotting counter to context kDefaultRead1 of partition_8_0_.naming_group_26_tbuf1a_8_0_35532.D_0_0_0 to read one vector per 4 cycles!  The hardware requires this transposed read has address monotonically increasing by the vector width within windows of 4 vectors. The bandwidth penalty won't be incurred if rewriting the read context to run for a multiple of 4 cycles and use read predication to mask off unwanted vectors!
+../compiler/rail/src/lib/node/tbuffer/TBufferContext.cpp:349:0
+ctx: kDefaultRead1 ../compiler/rail/src/lib/node/tbuffer/TBufferContext.cpp:349:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_8_0_.naming_group_26_tbuf1a_8_0_35532 HfTransformerSamba.cpp:48717:0
+[warning ]: You have created a transposed access but are not respecting slotting rules so there will be a performance drop!
+../compiler/rail/src/lib/node/tbuffer/TBufferContext.cpp:349:0
+ctx: kDefaultRead1 ../compiler/rail/src/lib/node/tbuffer/TBufferContext.cpp:349:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_8_0_.naming_group_26_tbuf1a_8_0_35532 HfTransformerSamba.cpp:48717:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_8_0_.HfTransformerSamba.partition_8_0_.naming_group_26_bertformaskedlm__crossentropyloss_1_bwd_loss.tbuf_tmp0 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[info    ]: Compilation succeeded for partition_8_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_9_0_.
+[warning ]: Injecting transpose slotting counter to context kBackReadCtx of partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__cls__predictions__decoder__linear__gemm__0_bwd_weight_accum.tbuf_transpose_drain.D_0_0_0 to read one vector per 4 cycles!  The hardware requires this transposed read has address monotonically increasing by the vector width within windows of 4 vectors. The bandwidth penalty won't be incurred if rewriting the read context to run for a multiple of 4 cycles and use read predication to mask off unwanted vectors!
+../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+ctx: kBackReadCtx ../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__cls__predictions__decoder__linear__gemm__0_bwd_weight_accum.tbuf_transpose_drain ../templates/src/templates/accumulator/rail/ParAccum.cpp:1231:0
+[warning ]: You have created a transposed access but are not respecting slotting rules so there will be a performance drop!
+../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+ctx: kBackReadCtx ../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__cls__predictions__decoder__linear__gemm__0_bwd_weight_accum.tbuf_transpose_drain ../templates/src/templates/accumulator/rail/ParAccum.cpp:1231:0
+[warning ]: You have created a transposed access but are not respecting slotting rules so there will be a performance drop!
+../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+ctx: kBackReadCtx ../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__cls__predictions__decoder__linear__gemm__1_bwd_weight_accum.tbuf_transpose_drain ../templates/src/templates/accumulator/rail/ParAccum.cpp:1231:0
+[warning ]: You have created a transposed access but are not respecting slotting rules so there will be a performance drop!
+../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+ctx: kBackReadCtx ../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__cls__predictions__decoder__linear__gemm__2_bwd_weight_accum.tbuf_transpose_drain ../templates/src/templates/accumulator/rail/ParAccum.cpp:1231:0
+[warning ]: You have created a transposed access but are not respecting slotting rules so there will be a performance drop!
+../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+ctx: kBackReadCtx ../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+pmu: D_0_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__cls__predictions__decoder__linear__gemm__3_bwd_weight_accum.tbuf_transpose_drain ../templates/src/templates/accumulator/rail/ParAccum.cpp:1231:0
+[warning ]: Cannot predict latency of context kBackReadCtx. Please suppress the warning by explicitly annotate the latency with set_ctx_latency() in the TBufferContext
+../templates/src/templates/accumulator/rail/ParAccum.cpp:1238:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__cls__predictions__decoder__linear__gemm__3_bwd_weight_accum.tbuf_transpose_drain ../templates/src/templates/accumulator/rail/ParAccum.cpp:1231:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp0 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp1 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp2 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp3 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp4 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp5 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp6 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp7 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp8 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp9 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp10 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp11 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp12 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp13 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp14 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp15 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp16 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp17 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp18 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp19 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp20 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp21 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp22 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp23 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp24 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp25 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp26 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp27 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp28 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[warning ]: For read or write contexts operating on this PMU tensor, the number of read context-dones must equal the number of write context-dones to avoid hangs due implicit hardware UDC thinking that the scratchpad is full. For this PMU with depth: 1 and scratchpad tensor Tensor0, #rd0_dones: 2 (skip_rd0_ctx: 0), #rd1_dones: 1 (skip_rd1_ctx: 0), #wr0_dones: 2 (skip_wr0_ctx: 0), #wr1_dones: 1 (skip_wr1_ctx: 0). The read contexts on this port with missing read dones are: (rd0: phaseRExp0, rd1: phase_rd_dummy dummy_phaseRExp0_to_phaseRSumRecip_launcher, wr0: none, wr1: none). Check the usage of set_ctx_done() or set_done() on these contexts.
+../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+pmu: D_0_0 ../compiler/rail/src/lib/pass/transform/tbuffer/TBufferUnitElaborationPass.cpp:93:0
+tbuffer: partition_9_0_.HfTransformerSamba.partition_9_0_.naming_group_27_bertformaskedlm__crossentropyloss_bwd_loss.tbuf_tmp29 ../templates/src/templates/cross_entropy/rail/CrossEntropyGrad.cpp:1813:0
+[info    ]: Compilation succeeded for partition_9_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_10_0_.
+[info    ]: Compilation succeeded for partition_10_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_11_0_.
+[info    ]: Compilation succeeded for partition_11_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_12_0_.
+[info    ]: Compilation succeeded for partition_12_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_13_0_.
+[info    ]: Compilation succeeded for partition_13_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_14_0_.
+[info    ]: Compilation succeeded for partition_14_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_15_0_.
+[info    ]: Compilation succeeded for partition_15_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_16_0_.
+[info    ]: Compilation succeeded for partition_16_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_17_0_.
+[info    ]: Compilation succeeded for partition_17_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_18_0_.
+[info    ]: Compilation succeeded for partition_18_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_19_0_.
+[info    ]: Compilation succeeded for partition_19_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_20_0_.
+[info    ]: Compilation succeeded for partition_20_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_21_0_.
+[info    ]: Compilation succeeded for partition_21_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_22_0_.
+[info    ]: Compilation succeeded for partition_22_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_23_0_.
+[info    ]: Compilation succeeded for partition_23_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_24_0_.
+[info    ]: Compilation succeeded for partition_24_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_25_0_.
+[info    ]: Compilation succeeded for partition_25_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_26_0_.
+[info    ]: Compilation succeeded for partition_26_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_27_0_.
+[info    ]: Compilation succeeded for partition_27_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_28_0_.
+[info    ]: Compilation succeeded for partition_28_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_29_0_.
+[info    ]: Compilation succeeded for partition_29_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_30_0_.
+[info    ]: Compilation succeeded for partition_30_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_31_0_.
+[info    ]: Compilation succeeded for partition_31_0_
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/sections_0_31
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/schedule_0_31
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_SymbolChipAssignment
+[info    ]: [PASS] Running PlasmaIR003_LegalizeLocationAssignment
+[info    ]: [PASS] Running PlasmaIR004_LegalizeIncrementalDataAllocation
+[info    ]: [PASS] Running PlasmaIR005_DdrAndHostSymbolAssignment
+[info    ]: [PASS] Running PlasmaIR006_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR007_LegalizeDataAllocation
+[info    ]: [PASS] Running PlasmaIR008_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_32_0_.
+[info    ]: Compilation succeeded for partition_32_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_33_0_.
+[info    ]: Compilation succeeded for partition_33_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_34_0_.
+[info    ]: Compilation succeeded for partition_34_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_35_0_.
+[info    ]: Compilation succeeded for partition_35_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_36_0_.
+[info    ]: Compilation succeeded for partition_36_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_37_0_.
+[info    ]: Compilation succeeded for partition_37_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_38_0_.
+[info    ]: Compilation succeeded for partition_38_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_39_0_.
+[info    ]: Compilation succeeded for partition_39_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_40_0_.
+[info    ]: Compilation succeeded for partition_40_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_41_0_.
+[info    ]: Compilation succeeded for partition_41_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_42_0_.
+[info    ]: Compilation succeeded for partition_42_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_43_0_.
+[info    ]: Compilation succeeded for partition_43_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_44_0_.
+[info    ]: Compilation succeeded for partition_44_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_45_0_.
+[info    ]: Compilation succeeded for partition_45_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_46_0_.
+[info    ]: Compilation succeeded for partition_46_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_47_0_.
+[info    ]: Compilation succeeded for partition_47_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_48_0_.
+[info    ]: Compilation succeeded for partition_48_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_49_0_.
+[info    ]: Compilation succeeded for partition_49_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_50_0_.
+[info    ]: Compilation succeeded for partition_50_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_51_0_.
+[info    ]: Compilation succeeded for partition_51_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_52_0_.
+[info    ]: Compilation succeeded for partition_52_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_53_0_.
+[info    ]: Compilation succeeded for partition_53_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_54_0_.
+[info    ]: Compilation succeeded for partition_54_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_55_0_.
+[info    ]: Compilation succeeded for partition_55_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_56_0_.
+[info    ]: Compilation succeeded for partition_56_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_57_0_.
+[info    ]: Compilation succeeded for partition_57_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_58_0_.
+[info    ]: Compilation succeeded for partition_58_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_59_0_.
+[info    ]: Compilation succeeded for partition_59_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_60_0_.
+[info    ]: Compilation succeeded for partition_60_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_61_0_.
+[info    ]: Compilation succeeded for partition_61_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_62_0_.
+[info    ]: Compilation succeeded for partition_62_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_63_0_.
+[info    ]: Compilation succeeded for partition_63_0_
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/sections_32_63
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/schedule_32_63
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_SymbolChipAssignment
+[info    ]: [PASS] Running PlasmaIR003_LegalizeLocationAssignment
+[info    ]: [PASS] Running PlasmaIR004_LegalizeIncrementalDataAllocation
+[info    ]: [PASS] Running PlasmaIR005_DdrAndHostSymbolAssignment
+[info    ]: [PASS] Running PlasmaIR006_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR007_LegalizeDataAllocation
+[info    ]: [PASS] Running PlasmaIR008_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_64_0_.
+[info    ]: Compilation succeeded for partition_64_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_65_0_.
+[info    ]: Compilation succeeded for partition_65_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_66_0_.
+[info    ]: Compilation succeeded for partition_66_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_67_0_.
+[info    ]: Compilation succeeded for partition_67_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_68_0_.
+[info    ]: Compilation succeeded for partition_68_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_69_0_.
+[info    ]: Compilation succeeded for partition_69_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_70_0_.
+[info    ]: Compilation succeeded for partition_70_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_71_0_.
+[info    ]: Compilation succeeded for partition_71_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_72_0_.
+[info    ]: Compilation succeeded for partition_72_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_73_0_.
+[info    ]: Compilation succeeded for partition_73_0_
+[info    ]: Logs are generated in /home/stabrawa/BertLarge/bertlrg///rail_gen//rail_compile_logs for partition_74_0_.
+[info    ]: Compilation succeeded for partition_74_0_
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/sections_64_74
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/schedule_64_74
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_SymbolChipAssignment
+[info    ]: [PASS] Running PlasmaIR003_LegalizeLocationAssignment
+[info    ]: [PASS] Running PlasmaIR004_LegalizeIncrementalDataAllocation
+[info    ]: [PASS] Running PlasmaIR005_DdrAndHostSymbolAssignment
+[info    ]: [PASS] Running PlasmaIR006_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR007_LegalizeDataAllocation
+[info    ]: [PASS] Running PlasmaIR008_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ]: Starting Plasma compile at /home/stabrawa/BertLarge/bertlrg/plasma_ir_modules/schedule_final
+[info    ]: [PASS] Running PlasmaIR000_PrinterPass
+[info    ]: [PASS] Running PlasmaIR001_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR002_PlasmaCanonicalizer
+[info    ]: [PASS] Running PlasmaIR003_SegmentFinalization
+[info    ]: [PASS] Running PlasmaIR004_LegalizeDataAllocation
+[info    ]: [PASS] Running PlasmaIR005_LegalizeSymbolOverlap
+[info    ]: [PASS] Running PlasmaIR006_PrinterPass
+[info    ]: Plasma compile succeeded.
+[info    ] : PEF file /home/stabrawa/BertLarge/bertlrg//bertlrg.pef created
+COMPILE END AT 626
+RUN
+SHELL=/bin/bash
+PWD=/home/stabrawa/BertLarge
+LOGNAME=stabrawa
+OPENBLAS_NUM_THREADS=8
+MOTD_SHOWN=pam
+HOME=/home/stabrawa
+LANG=en_US.UTF-8
+VIRTUAL_ENV=/opt/sambaflow/apps/nlp/transformers_on_rdu/venv
+SSH_CONNECTION=140.221.69.48 39414 140.221.82.8 22
+TERM=xterm-256color
+LIBVIRT_DEFAULT_URI=qemu:///system
+USER=stabrawa
+IBV_FORK_SAFE=1
+SHLVL=3
+SOFTWARE_HOME=/opt
+PS1=(venv) 
+SSH_CLIENT=140.221.69.48 39414 22
+SN_NUM_THREADS=32
+OMP_NUM_THREADS=18
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/opt/sambaflow/apps/nlp/transformers_on_rdu/venv/bin:/opt/sambanova/bin:/opt/sambaflow/bin:/opt/sambaflow/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/stabrawa/.local/bin:/home/stabrawa/bin
+GLIBC_TUNABLES=glibc.cpu.hwcaps=-AVX_Usable,-AVX2_Usable,-Prefer_ERMS,-Prefer_FSRM,Prefer_No_AVX512,Prefer_No_VZEROUPPER,-AVX_Fast_Unaligned_Load,-ERMS
+SSH_TTY=/dev/pts/8
+OLDPWD=/home/stabrawa
+_=/usr/bin/env
+Submitted batch job 43717
+Machine state After: 
+Platform: DataScale SN30-8
+
+Physical Inventory:
+Component Name                        | Serial Number       | Inventory State | Functional State
+------------------------------------------------------------------------------------------------
+/NODE/XRDU_0/RDU_0                    | 105050356D2D5895    | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_0/DIMM_A0    | 1F6F8DE             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_1/DIMM_B0    | 1F6F677             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_2/DIMM_E0    | 1F6F8BE             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_3/DIMM_F0    | 1F5BC7F             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_4/DIMM_G0    | 1F5BC2F             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_5/DIMM_H0    | 1F5BC79             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_6/DIMM_C0    | 1F5BC2E             | Present         | Online       
+/NODE/XRDU_0/RDU_0/DDRCH_7/DIMM_D0    | 1F5BC78             | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1                    | 407008356D2D5895    | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_0/DIMM_J0    | 1F6F844             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_1/DIMM_K0    | 1F6F59F             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_2/DIMM_N0    | 1F6F8B3             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_3/DIMM_P0    | 1F6F687             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_4/DIMM_Q0    | 1F6F7C4             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_5/DIMM_R0    | 1F6F7D0             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_6/DIMM_L0    | 1F6F605             | Present         | Online       
+/NODE/XRDU_0/RDU_1/DDRCH_7/DIMM_M0    | 1F6F64B             | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_0/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_0/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_0/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0                    | 506032B16ABDB895    | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_0/DIMM_A0    | 1F6F8E1             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_1/DIMM_B0    | 1F6F814             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_2/DIMM_E0    | 1F6F80B             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_3/DIMM_F0    | 1F6F7A8             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_4/DIMM_G0    | 1F6F78D             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_5/DIMM_H0    | 1F6F664             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_6/DIMM_C0    | 1F6F6D8             | Present         | Online       
+/NODE/XRDU_1/RDU_0/DDRCH_7/DIMM_D0    | 1F6F71F             | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1                    | 304872B16ABDB895    | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_0/DIMM_J0    | 1F6F887             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_1/DIMM_K0    | 1F6F7D5             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_2/DIMM_N0    | 1F6F654             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_3/DIMM_P0    | 1F6F675             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_4/DIMM_Q0    | 1F6F72A             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_5/DIMM_R0    | 1F6F73B             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_6/DIMM_L0    | 1F6F7A2             | Present         | Online       
+/NODE/XRDU_1/RDU_1/DDRCH_7/DIMM_M0    | 1F6F6F0             | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_1/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_1/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_1/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0                    | 605022B16ABDB895    | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_0/DIMM_A0    | 3427953             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_1/DIMM_B0    | 3427572             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_2/DIMM_E0    | 3427501             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_3/DIMM_F0    | 3427929             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_4/DIMM_G0    | 34279C1             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_5/DIMM_H0    | 34279CC             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_6/DIMM_C0    | 3427490             | Present         | Online       
+/NODE/XRDU_2/RDU_0/DDRCH_7/DIMM_D0    | 34279C2             | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1                    | 507036B16ABDB895    | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_0/DIMM_J0    | 34275D4             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_1/DIMM_K0    | 3427A3D             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_2/DIMM_N0    | 342746D             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_3/DIMM_P0    | 3427A5F             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_4/DIMM_Q0    | 3427A59             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_5/DIMM_R0    | 34274F9             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_6/DIMM_L0    | 34279A7             | Present         | Online       
+/NODE/XRDU_2/RDU_1/DDRCH_7/DIMM_M0    | 34274FE             | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_2/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_2/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_2/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0                    | 10286B316ABDB895    | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_0/DIMM_A0    | 1F5BD73             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_1/DIMM_B0    | 1F5BBB5             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_2/DIMM_E0    | 1F5BBA9             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_3/DIMM_F0    | 1F5BD04             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_4/DIMM_G0    | 1F5BBA8             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_5/DIMM_H0    | 1F5BD0A             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_6/DIMM_C0    | 1F5BCFD             | Present         | Online       
+/NODE/XRDU_3/RDU_0/DDRCH_7/DIMM_D0    | 1F5BD09             | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_0/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1                    | 606012B16ABDB895    | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_0/DIMM_J0    | 1F5BB09             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_1/DIMM_K0    | 1F5BB01             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_2/DIMM_N0    | 1F5BB62             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_3/DIMM_P0    | 1F5BB3C             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_4/DIMM_Q0    | 1F5BC92             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_5/DIMM_R0    | 1F5BAC0             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_6/DIMM_L0    | 1F5BBBC             | Present         | Online       
+/NODE/XRDU_3/RDU_1/DDRCH_7/DIMM_M0    | 1F5BB16             | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/PCIE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_0             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_1             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_2             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_3             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_4             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_5             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_6             | N/A                 | Present         | Online       
+/NODE/XRDU_3/RDU_1/TILE_7             | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0                     | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_2              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_3              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_4              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_5              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_6              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_7              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_0/PORT_8              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1                     | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1/PORT_0              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1/PORT_1              | N/A                 | Present         | Online       
+/NODE/XRDU_3/SW_1/PORT_2              | N/A                 | Absent          | N/A          
+/NODE/XRDU_3/SW_1/PORT_3              | N/A                 | Present         | Online       
+/NODE/HOST/HIC_0/DPORT                | N/A                 | Present         | Online       
+/NODE/HOST/HIC_1/DPORT                | N/A                 | Present         | Online       
+/NODE/HOST/HIC_2/DPORT                | N/A                 | Present         | Online       
+/NODE/HOST/HIC_3/DPORT                | N/A                 | Present         | Online
+Duration:  626

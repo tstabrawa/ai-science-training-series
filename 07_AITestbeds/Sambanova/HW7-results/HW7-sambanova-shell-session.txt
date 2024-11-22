@@ -1,0 +1,452 @@
+stabrawa@sn-login-01:~$ ssh sn30-r2-h2
+The authenticity of host 'sn30-r2-h2 (140.221.82.8)' can't be established.
+ECDSA key fingerprint is SHA256:NoWZ0yp8fe/Fj/B+pImIF6dpC6cMf3paWGuu0Cm40M4.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'sn30-r2-h2' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-147-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu 21 Nov 2024 09:24:26 PM UTC
+
+  System load:     1.27                IPv4 address for snhni0: 140.221.82.8
+  Usage of /:      52.1% of 847.12GB   IPv4 address for snni0:  172.16.0.25
+  Memory usage:    62%                 IPv4 address for snni2:  172.16.0.26
+  Swap usage:      0%                  IPv4 address for snni4:  172.16.0.27
+  Processes:       1980                IPv4 address for snni6:  172.16.0.28
+  Users logged in: 2                   IPv4 address for virbr0: 192.168.122.1
+
+  => /var/cores is using 94.9% of 97.87GB
+
+32 updates can be installed immediately.
+0 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+#################################### Please note update on 12-20-2023 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Now Running Sambaflow 1.17.7-27
+Acceptance Test scripts are in /data/ANL/scripts.
+Acceptance Test results are in /data/ANL/results.
+
+Older scripts are in /data/ANL/scripts/1.17.4-28
+
+see /data/ANL/scripts/model_all_run.sh  for examples on how to run each test.
+see also /data/ANL/scripts/Readme.
+
+snfadm will report 8 RDUS.
+In 1.16 for the purpose of slurm there were 16 four tile RDUS.
+IN 1.17 slurm now thinks that there are 8 RDUs.
+
+sinfo -O AllocNodes,GresUsed,Gres,NodeList
+ALLOCNODES          GRES_USED           GRES                NODELIST
+oll                 rdu:0,rdu_mem:0,rdu_rdu:8,rdu_mem:104854sn30-r1-h[1-2],sn30-
+
+Now
+If you compile, then by default you will get a pef that
+requires 8 tiles and you should use --gres=rdu:1 with sbatch.
+
+--nchips=2 will get you a pef that uses 8 tiles.
+
+But if you use ---num-tiles=4 you will only use 1/2 an RDU.
+I do not know how to ask for 1/2.
+So you will have to use --gres=rdu:1.
+
+With multi-node slurm please not the gres value is the
+number of RDUs per NODE!
+
+rick weisner
+
+While using bert I discovered that it wanted an environment
+variable named SOFTWARE_HOME defined. This a bug.
+As a best practice please use
+export SOFTWARE_HOME=/opt
+
+Since 1.14 there is no longer a common venv. Each model has its own venv.
+In /opt/sambaflow
+./apps/private/anl/venv
+./apps/micros/venv
+./apps/starters/mlp/venv
+./apps/starters/lenet/venv
+./apps/starters/ffn_mnist/venv
+./apps/starters/logreg/venv
+./apps/starters/upscalenet/venv
+./apps/starters/power_pca/venv
+./apps/image/segmentation_3d/venv
+./apps/image/deepvit/venv
+./apps/image/segmentation/venv
+./apps/image/object_detection/venv
+./apps/image/classification/venv
+./apps/recommender/dlrm/venv
+./apps/recommender/ncf/venv
+./apps/recommender/deepinterest/venv
+./apps/nlp/transformers_on_rdu/venv
+./apps/nlp/transformers_on_rdu/gpt13b/venv
+./apps/nlp/data_processing/venv
+
+If in doubt start with:
+/opt/sambaflow/apps/private/anl/venv
+
+
+These machines should not be rebooted, they should be reset.
+
+power off host
+  ipmitool -I lanplus -H XX.XX.XX.XX -U xxxxx -P YYYYYYYYYY chassis power soft
+login to XRDU0
+  ssh -l UN XX.XX.XX.XX
+Poweroff xrdus
+  xrduutil -U UN -P XXXXXXXXXXXXXXXXXX poweroff
+wait 30 sec
+  sleep 30
+poweron the XRDUs
+  xrduutil -U UN -P XXXXXXXXXXXXX poweron
+  sleep 30
+poweron host
+  ipmitool -I lanplus -H XX.XX.XX.XX -U UN -P YYYYYYYYYY chassis power on
+
+!!!!!!!!!!!!!!!!!!
+scancel should ran against running jobs.
+scancel.exe should be ran against pending jobs.
+
+
+Additionally, the `---full` option  helps ensure that the signal is sent to every process in the SLURM job. In general, we recommend using these two options with scancel.
+
+scancel --signal=TERM --full
+
+scancel now does TERM by default. If you need the old behavior use scancel.exe.
+#################################### Please note update on 12-20-2023 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Now Running Sambaflow 1.17.7-27
+Acceptance Test scripts are in /data/ANL/scripts.
+Acceptance Test results are in /data/ANL/results.
+
+Older scripts are in /data/ANL/scripts/1.17.4-28
+
+see /data/ANL/scripts/model_all_run.sh  for examples on how to run each test.
+see also /data/ANL/scripts/Readme.
+
+snfadm will report 8 RDUS.
+In 1.16 for the purpose of slurm there were 16 four tile RDUS.
+IN 1.17 slurm now thinks that there are 8 RDUs.
+
+sinfo -O AllocNodes,GresUsed,Gres,NodeList
+ALLOCNODES          GRES_USED           GRES                NODELIST
+oll                 rdu:0,rdu_mem:0,rdu_rdu:8,rdu_mem:104854sn30-r1-h[1-2],sn30-
+
+Now
+If you compile, then by default you will get a pef that
+requires 8 tiles and you should use --gres=rdu:1 with sbatch.
+
+--nchips=2 will get you a pef that uses 8 tiles.
+
+But if you use ---num-tiles=4 you will only use 1/2 an RDU.
+I do not know how to ask for 1/2.
+So you will have to use --gres=rdu:1.
+
+With multi-node slurm please not the gres value is the
+number of RDUs per NODE!
+
+rick weisner
+
+While using bert I discovered that it wanted an environment
+variable named SOFTWARE_HOME defined. This a bug.
+As a best practice please use
+export SOFTWARE_HOME=/opt
+
+Since 1.14 there is no longer a common venv. Each model has its own venv.
+In /opt/sambaflow
+./apps/private/anl/venv
+./apps/micros/venv
+./apps/starters/mlp/venv
+./apps/starters/lenet/venv
+./apps/starters/ffn_mnist/venv
+./apps/starters/logreg/venv
+./apps/starters/upscalenet/venv
+./apps/starters/power_pca/venv
+./apps/image/segmentation_3d/venv
+./apps/image/deepvit/venv
+./apps/image/segmentation/venv
+./apps/image/object_detection/venv
+./apps/image/classification/venv
+./apps/recommender/dlrm/venv
+./apps/recommender/ncf/venv
+./apps/recommender/deepinterest/venv
+./apps/nlp/transformers_on_rdu/venv
+./apps/nlp/transformers_on_rdu/gpt13b/venv
+./apps/nlp/data_processing/venv
+
+If in doubt start with:
+/opt/sambaflow/apps/private/anl/venv
+
+
+These machines should not be rebooted, they should be reset.
+
+power off host
+  ipmitool -I lanplus -H XX.XX.XX.XX -U xxxxx -P YYYYYYYYYY chassis power soft
+login to XRDU0
+  ssh -l UN XX.XX.XX.XX
+Poweroff xrdus
+  xrduutil -U UN -P XXXXXXXXXXXXXXXXXX poweroff
+wait 30 sec
+  sleep 30
+poweron the XRDUs
+  xrduutil -U UN -P XXXXXXXXXXXXX poweron
+  sleep 30
+poweron host
+  ipmitool -I lanplus -H XX.XX.XX.XX -U UN -P YYYYYYYYYY chassis power on
+
+!!!!!!!!!!!!!!!!!!
+scancel should ran against running jobs.
+scancel.exe should be ran against pending jobs.
+
+
+Additionally, the `---full` option  helps ensure that the signal is sent to every process in the SLURM job. In general, we recommend using these two options with scancel.
+
+scancel --signal=TERM --full
+
+scancel now does TERM by default. If you need the old behavior use scancel.exe.
+stabrawa@sn30-r2-h2:~$ git clone https://github.com/argonne-lcf/ai-science-training-series.git/
+Cloning into 'ai-science-training-series'...
+remote: Enumerating objects: 3852, done.
+remote: Counting objects: 100% (199/199), done.
+remote: Compressing objects: 100% (124/124), done.
+remote: Total 3852 (delta 93), reused 168 (delta 74), pack-reused 3653 (from 1)
+Receiving objects: 100% (3852/3852), 396.46 MiB | 76.37 MiB/s, done.
+Resolving deltas: 100% (1960/1960), done.
+Updating files: 100% (425/425), done.
+stabrawa@sn30-r2-h2:~$ git clone https://github.com/argonne-lcf/ai-science-training-series.git/
+fatal: destination path 'ai-science-training-series' already exists and is not an empty directory.
+stabrawa@sn30-r2-h2:~$ cd cd ai-science-training-series/07_AITestbeds/Sambanova/bert/
+-bash: cd: too many arguments
+stabrawa@sn30-r2-h2:~$ cd ai-science-training-series/07_AITestbeds/Sambanova/bert/
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ chmod +x BertLarge.sh
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ script ~/HW7.log
+Script started, file is /home/stabrawa/HW7.log
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ ./BertLarge.sh
+Using /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.21/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ sed -i 's/--cache/--cache_dir/' BertLarge_run.sh
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ git diff
+diff --git a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+index ef43361..f44a941 100644
+--- a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
++++ b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+@@ -63,8 +63,8 @@ FI_VERBS_IFACE=eth
+ #SAMBA_SEED=256
+ #DISALLOW_VISUALIZE=True
+ #OMP_NUM_THREADS=8
+-  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+-  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+ echo "RUN COMMAND: $COMMAND" >> ${OUTPUT_PATH} 2>&1
+ eval $COMMAND >> ${OUTPUT_PATH} 2>&1
+
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ ./BertLarge.sh
+Using /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out for output
+/home/stabrawa/BertLarge/bertlrg/bertlrg.pef exists
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ rm -rf ~/BertLarge
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ ./BertLarge.sh
+Using /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             43717 sambanova BertLarg stabrawa  R       1:45      1 sn30-r1-h1
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cat ~/slurm-43717.out
+Using /home/stabrawa/BertLarge/112124.22/BertLarge.out for output
+Using /home/stabrawa/BertLarge/112124.22/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ tail -f /home/stabrawa/BertLarge/112124.22/BertLarge.out
+Iteration:  10%|▉         | 248/2551 [03:54<36:50,  1.04it/s]2024-11-21 22:25:10,776 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:249|global_step:249|average_loss:9.29045|step_loss:9.29045|step_ns_loss:0.67473|step_mlm_loss:8.61572|learning_rate:3.47e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|▉         | 249/2551 [03:55<35:53,  1.07it/s]2024-11-21 22:25:12,202 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:250|global_step:250|average_loss:9.33719|step_loss:9.33719|step_ns_loss:0.68008|step_mlm_loss:8.65710|learning_rate:3.49e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|▉         | 250/2551 [03:57<41:32,  1.08s/it]2024-11-21 22:25:13,081 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:251|global_step:251|average_loss:9.21019|step_loss:9.21019|step_ns_loss:0.65189|step_mlm_loss:8.55830|learning_rate:3.50e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|▉         | 251/2551 [03:57<39:09,  1.02s/it]2024-11-21 22:25:13,957 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:252|global_step:252|average_loss:9.24885|step_loss:9.24885|step_ns_loss:0.64545|step_mlm_loss:8.60340|learning_rate:3.51e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|▉         | 252/2551 [03:58<37:27,  1.02it/s]2024-11-21 22:25:14,834 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:253|global_step:253|average_loss:9.25070|step_loss:9.25070|step_ns_loss:0.64989|step_mlm_loss:8.60081|learning_rate:3.53e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|▉         | 253/2551 [03:59<36:18,  1.06it/s]2024-11-21 22:25:15,712 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:254|global_step:254|average_loss:9.20727|step_loss:9.20727|step_ns_loss:0.62708|step_mlm_loss:8.58020|learning_rate:3.54e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|▉         | 254/2551 [04:00<35:28,  1.08it/s]2024-11-21 22:25:16,590 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:255|global_step:255|average_loss:9.29231|step_loss:9.29231|step_ns_loss:0.63443|step_mlm_loss:8.65788|learning_rate:3.56e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|▉         | 255/2551 [04:01<34:54,  1.10it/s]2024-11-21 22:25:17,467 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:256|global_step:256|average_loss:9.23395|step_loss:9.23395|step_ns_loss:0.62292|step_mlm_loss:8.61102|learning_rate:3.57e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 256/2551 [04:02<34:28,  1.11it/s]2024-11-21 22:25:18,345 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:257|global_step:257|average_loss:9.29899|step_loss:9.29899|step_ns_loss:0.65829|step_mlm_loss:8.64069|learning_rate:3.58e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 257/2551 [04:03<34:11,  1.12it/s]2024-11-21 22:25:19,223 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:258|global_step:258|average_loss:9.25129|step_loss:9.25129|step_ns_loss:0.67093|step_mlm_loss:8.58036|learning_rate:3.60e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 258/2551 [04:04<34:01,  1.12it/s]2024-11-21 22:25:20,106 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:259|global_step:259|average_loss:9.30929|step_loss:9.30929|step_ns_loss:0.64630|step_mlm_loss:8.66299|learning_rate:3.61e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 259/2551 [04:04<33:55,  1.13it/s]2024-11-21 22:25:20,988 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:260|global_step:260|average_loss:9.24971|step_loss:9.24971|step_ns_loss:0.62842|step_mlm_loss:8.62129|learning_rate:3.63e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 260/2551 [04:05<33:50,  1.13it/s]2024-11-21 22:25:21,871 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:261|global_step:261|average_loss:9.21838|step_loss:9.21838|step_ns_loss:0.65007|step_mlm_loss:8.56831|learning_rate:3.64e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 261/2551 [04:06<33:45,  1.13it/s]2024-11-21 22:25:22,749 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:262|global_step:262|average_loss:9.29757|step_loss:9.29757|step_ns_loss:0.64265|step_mlm_loss:8.65492|learning_rate:3.65e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 262/2551 [04:07<33:40,  1.13it/s]2024-11-21 22:25:23,627 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:263|global_step:263|average_loss:9.20333|step_loss:9.20333|step_ns_loss:0.63268|step_mlm_loss:8.57066|learning_rate:3.67e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 263/2551 [04:08<33:36,  1.13it/s]2024-11-21 22:25:24,505 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:264|global_step:264|average_loss:9.27503|step_loss:9.27503|step_ns_loss:0.67746|step_mlm_loss:8.59757|learning_rate:3.68e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 264/2551 [04:09<33:35,  1.13it/s]2024-11-21 22:25:25,392 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:265|global_step:265|average_loss:9.20248|step_loss:9.20248|step_ns_loss:0.63651|step_mlm_loss:8.56598|learning_rate:3.70e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 265/2551 [04:10<33:37,  1.13it/s]2024-11-21 22:25:26,272 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:266|global_step:266|average_loss:9.19769|step_loss:9.19769|step_ns_loss:0.65601|step_mlm_loss:8.54169|learning_rate:3.71e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 266/2551 [04:11<33:33,  1.13it/s]2024-11-21 22:25:27,151 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:267|global_step:267|average_loss:9.15088|step_loss:9.15088|step_ns_loss:0.64458|step_mlm_loss:8.50630|learning_rate:3.72e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  10%|█         | 267/2551 [04:11<33:31,  1.14it/s]2024-11-21 22:25:28,030 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:268|global_step:268|average_loss:9.17234|step_loss:9.17234|step_ns_loss:0.66852|step_mlm_loss:8.50382|learning_rate:3.74e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 268/2551 [04:12<33:29,  1.14it/s]2024-11-21 22:25:28,908 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:269|global_step:269|average_loss:9.18060|step_loss:9.18060|step_ns_loss:0.62428|step_mlm_loss:8.55632|learning_rate:3.75e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 269/2551 [04:13<33:28,  1.14it/s]2024-11-21 22:25:29,790 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:270|global_step:270|average_loss:9.20193|step_loss:9.20193|step_ns_loss:0.64851|step_mlm_loss:8.55341|learning_rate:3.77e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 270/2551 [04:14<33:28,  1.14it/s]2024-11-21 22:25:30,669 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:271|global_step:271|average_loss:9.15894|step_loss:9.15894|step_ns_loss:0.62711|step_mlm_loss:8.53183|learning_rate:3.78e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 271/2551 [04:15<33:24,  1.14it/s]2024-11-21 22:25:31,547 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:272|global_step:272|average_loss:9.19107|step_loss:9.19107|step_ns_loss:0.66191|step_mlm_loss:8.52916|learning_rate:3.79e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 272/2551 [04:16<33:23,  1.14it/s]2024-11-21 22:25:32,426 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:273|global_step:273|average_loss:9.06736|step_loss:9.06736|step_ns_loss:0.61160|step_mlm_loss:8.45575|learning_rate:3.81e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 273/2551 [04:17<33:23,  1.14it/s]2024-11-21 22:25:33,305 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:274|global_step:274|average_loss:9.11495|step_loss:9.11495|step_ns_loss:0.62257|step_mlm_loss:8.49238|learning_rate:3.82e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 274/2551 [04:18<33:20,  1.14it/s]2024-11-21 22:25:34,186 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:275|global_step:275|average_loss:9.18733|step_loss:9.18733|step_ns_loss:0.68500|step_mlm_loss:8.50233|learning_rate:3.84e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 275/2551 [04:18<33:21,  1.14it/s]2024-11-21 22:25:35,062 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:276|global_step:276|average_loss:9.17421|step_loss:9.17421|step_ns_loss:0.66034|step_mlm_loss:8.51387|learning_rate:3.85e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 276/2551 [04:19<33:18,  1.14it/s]2024-11-21 22:25:35,942 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:277|global_step:277|average_loss:9.18654|step_loss:9.18654|step_ns_loss:0.64594|step_mlm_loss:8.54061|learning_rate:3.86e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 277/2551 [04:20<33:18,  1.14it/s]2024-11-21 22:25:36,823 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:278|global_step:278|average_loss:9.15142|step_loss:9.15142|step_ns_loss:0.66096|step_mlm_loss:8.49045|learning_rate:3.88e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 278/2551 [04:21<33:19,  1.14it/s]2024-11-21 22:25:37,703 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:279|global_step:279|average_loss:9.11044|step_loss:9.11044|step_ns_loss:0.65019|step_mlm_loss:8.46024|learning_rate:3.89e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 279/2551 [04:22<33:18,  1.14it/s]2024-11-21 22:25:38,581 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:280|global_step:280|average_loss:9.12693|step_loss:9.12693|step_ns_loss:0.65042|step_mlm_loss:8.47651|learning_rate:3.91e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 280/2551 [04:23<33:16,  1.14it/s]2024-11-21 22:25:39,460 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:281|global_step:281|average_loss:9.14267|step_loss:9.14267|step_ns_loss:0.63657|step_mlm_loss:8.50611|learning_rate:3.92e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 281/2551 [04:24<33:15,  1.14it/s]2024-11-21 22:25:40,339 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:282|global_step:282|average_loss:9.13419|step_loss:9.13419|step_ns_loss:0.65677|step_mlm_loss:8.47742|learning_rate:3.93e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 282/2551 [04:25<33:15,  1.14it/s]2024-11-21 22:25:41,216 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:283|global_step:283|average_loss:9.22791|step_loss:9.22791|step_ns_loss:0.63223|step_mlm_loss:8.59568|learning_rate:3.95e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 283/2551 [04:26<33:12,  1.14it/s]2024-11-21 22:25:42,095 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:284|global_step:284|average_loss:9.19180|step_loss:9.19180|step_ns_loss:0.67693|step_mlm_loss:8.51487|learning_rate:3.96e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 284/2551 [04:26<33:13,  1.14it/s]2024-11-21 22:25:42,976 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:285|global_step:285|average_loss:9.18512|step_loss:9.18512|step_ns_loss:0.66110|step_mlm_loss:8.52402|learning_rate:3.98e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 285/2551 [04:27<33:12,  1.14it/s]2024-11-21 22:25:43,856 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:286|global_step:286|average_loss:9.20839|step_loss:9.20839|step_ns_loss:0.64473|step_mlm_loss:8.56366|learning_rate:3.99e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█         | 286/2551 [04:28<33:11,  1.14it/s]2024-11-21 22:25:44,735 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:287|global_step:287|average_loss:9.13153|step_loss:9.13153|step_ns_loss:0.64290|step_mlm_loss:8.48863|learning_rate:4.00e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█▏        | 287/2551 [04:29<33:10,  1.14it/s]2024-11-21 22:25:45,613 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:288|global_step:288|average_loss:9.10092|step_loss:9.10092|step_ns_loss:0.63428|step_mlm_loss:8.46665|learning_rate:4.02e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█▏        | 288/2551 [04:30<33:08,  1.14it/s]2024-11-21 22:25:46,491 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:289|global_step:289|average_loss:9.05842|step_loss:9.05842|step_ns_loss:0.66815|step_mlm_loss:8.39027|learning_rate:4.03e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█▏        | 289/2551 [04:31<33:07,  1.14it/s]2024-11-21 22:25:47,371 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:290|global_step:290|average_loss:9.08023|step_loss:9.08023|step_ns_loss:0.63736|step_mlm_loss:8.44287|learning_rate:4.05e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█▏        | 290/2551 [04:32<33:07,  1.14it/s]2024-11-21 22:25:48,248 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:291|global_step:291|average_loss:9.12636|step_loss:9.12636|step_ns_loss:0.66628|step_mlm_loss:8.46008|learning_rate:4.06e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█▏        | 291/2551 [04:33<33:04,  1.14it/s]2024-11-21 22:25:49,126 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:292|global_step:292|average_loss:9.09120|step_loss:9.09120|step_ns_loss:0.63103|step_mlm_loss:8.46018|learning_rate:4.07e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:  11%|█▏        | 292/2551 [04:33<33:03,  1.14it/s]2024-11-21 22:25:50,053 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 1890343 - info     - epoch:0|local_step:293|global_step:293|average_loss:9.10774|step_loss:9.10774|step_ns_loss:0.64799|step_mlm_loss:8.45974|learning_rate:4.09e-06|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+^C
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out HW7-BertLarge-16tasks-1stlog.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out ~/HW7-BertLarge-16tasks-1stlog.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/BertLarge/112124.22/BertLarge.out ~/HW7-BertLarge-16tasks-2ndlog.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ rm HW7-BertLarge-16tasks-1stlog.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ sed -i 's/--ntasks 16/--ntasks 32/' BertLarge.sh
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ git diff
+diff --git a/07_AITestbeds/Sambanova/bert/BertLarge.sh b/07_AITestbeds/Sambanova/bert/BertLarge.sh
+index e835710..6cabd20 100755
+--- a/07_AITestbeds/Sambanova/bert/BertLarge.sh
++++ b/07_AITestbeds/Sambanova/bert/BertLarge.sh
+@@ -56,7 +56,7 @@ fi
+ #######################
+ echo "RUN" >> ${OUTPUT_PATH} 2>&1
+ env >> ${OUTPUT_PATH} 2>&1
+-/usr/local/bin/sbatch --output=${HOME}/slurm-%A.out --ntasks 16 --gres=rdu:8 --ntasks-per-node 16  --nodes 1 --cpus-per-task=8  ${PROJ_DIR}/BertLarge_run.sh $1 >> ${OUTPUT_PATH} 2>&1
++/usr/local/bin/sbatch --output=${HOME}/slurm-%A.out --ntasks 32 --gres=rdu:8 --ntasks-per-node 16  --nodes 1 --cpus-per-task=8  ${PROJ_DIR}/BertLarge_run.sh $1 >> ${OUTPUT_PATH} 2>&1
+
+ #######################
+ echo "Machine state After: " >> ${OUTPUT_PATH} 2>&1
+diff --git a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+index ef43361..f44a941 100644
+--- a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
++++ b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+@@ -63,8 +63,8 @@ FI_VERBS_IFACE=eth
+ #SAMBA_SEED=256
+ #DISALLOW_VISUALIZE=True
+ #OMP_NUM_THREADS=8
+-  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+-  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+ echo "RUN COMMAND: $COMMAND" >> ${OUTPUT_PATH} 2>&1
+ eval $COMMAND >> ${OUTPUT_PATH} 2>&1
+
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ ./BertLarge.sh
+Using /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out for output
+/home/stabrawa/BertLarge/bertlrg/bertlrg.pef exists
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ rm -rf ~/BertLarge
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ ./BertLarge.sh
+Using /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out ~/HW7-BertLarge-32tasks-1stlog-failed.
+out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ sed -i 's/--ntasks 32/--ntasks 8/' BertLarge.sh
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ git diff
+diff --git a/07_AITestbeds/Sambanova/bert/BertLarge.sh b/07_AITestbeds/Sambanova/bert/BertLarge.sh
+index e835710..cd1de51 100755
+--- a/07_AITestbeds/Sambanova/bert/BertLarge.sh
++++ b/07_AITestbeds/Sambanova/bert/BertLarge.sh
+@@ -56,7 +56,7 @@ fi
+ #######################
+ echo "RUN" >> ${OUTPUT_PATH} 2>&1
+ env >> ${OUTPUT_PATH} 2>&1
+-/usr/local/bin/sbatch --output=${HOME}/slurm-%A.out --ntasks 16 --gres=rdu:8 --ntasks-per-node 16  --nodes 1 --cpus-per-task=8  ${PROJ_DIR}/BertLarge_run.sh $1 >> ${OUTPUT_PATH} 2>&1
++/usr/local/bin/sbatch --output=${HOME}/slurm-%A.out --ntasks 8 --gres=rdu:8 --ntasks-per-node 16  --nodes 1 --cpus-per-task=8  ${PROJ_DIR}/BertLarge_run.sh $1 >> ${OUTPUT_PATH} 2>&1
+
+ #######################
+ echo "Machine state After: " >> ${OUTPUT_PATH} 2>&1
+diff --git a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+index ef43361..f44a941 100644
+--- a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
++++ b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+@@ -63,8 +63,8 @@ FI_VERBS_IFACE=eth
+ #SAMBA_SEED=256
+ #DISALLOW_VISUALIZE=True
+ #OMP_NUM_THREADS=8
+-  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+-  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+ echo "RUN COMMAND: $COMMAND" >> ${OUTPUT_PATH} 2>&1
+ eval $COMMAND >> ${OUTPUT_PATH} 2>&1
+
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ rm -rf ~/BertLarge
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ ./BertLarge.sh
+Using /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             43720 sambanova BertLarg stabrawa  R       0:16      1 sn30-r1-h1
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cat slurm-43720.out
+cat: slurm-43720.out: No such file or directory
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cat ~slurm-43720.out
+cat: '~slurm-43720.out': No such file or directory
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cat ~/slurm-43720.out
+Using /home/stabrawa/BertLarge/112124.23/BertLarge.out for output
+Using /home/stabrawa/BertLarge/112124.23/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ tail -f /home/stabrawa/BertLarge/112124.23/BertLarge.out
+Iteration:   2%|▏         | 51/2549 [01:16<36:15,  1.15it/s]2024-11-21 23:08:17,763 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:52|global_step:52|average_loss:10.63101|step_loss:10.63101|step_ns_loss:0.65788|step_mlm_loss:9.97312|learning_rate:7.14e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 52/2549 [01:17<36:15,  1.15it/s]2024-11-21 23:08:18,635 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:53|global_step:53|average_loss:10.62991|step_loss:10.62991|step_ns_loss:0.65988|step_mlm_loss:9.97003|learning_rate:7.28e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 53/2549 [01:18<36:15,  1.15it/s]2024-11-21 23:08:19,505 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:54|global_step:54|average_loss:10.66229|step_loss:10.66229|step_ns_loss:0.67755|step_mlm_loss:9.98474|learning_rate:7.42e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 54/2549 [01:18<36:12,  1.15it/s]2024-11-21 23:08:20,377 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:55|global_step:55|average_loss:10.64144|step_loss:10.64144|step_ns_loss:0.68867|step_mlm_loss:9.95277|learning_rate:7.56e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 55/2549 [01:19<36:12,  1.15it/s]2024-11-21 23:08:21,247 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:56|global_step:56|average_loss:10.57085|step_loss:10.57085|step_ns_loss:0.67885|step_mlm_loss:9.89201|learning_rate:7.70e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 56/2549 [01:20<36:11,  1.15it/s]2024-11-21 23:08:22,118 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:57|global_step:57|average_loss:10.58835|step_loss:10.58835|step_ns_loss:0.68085|step_mlm_loss:9.90751|learning_rate:7.84e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 57/2549 [01:21<36:10,  1.15it/s]2024-11-21 23:08:22,990 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:58|global_step:58|average_loss:10.60632|step_loss:10.60632|step_ns_loss:0.66586|step_mlm_loss:9.94046|learning_rate:7.98e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 58/2549 [01:22<36:10,  1.15it/s]2024-11-21 23:08:23,860 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:59|global_step:59|average_loss:10.58921|step_loss:10.58921|step_ns_loss:0.67340|step_mlm_loss:9.91581|learning_rate:8.12e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 59/2549 [01:23<36:09,  1.15it/s]2024-11-21 23:08:24,733 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:60|global_step:60|average_loss:10.60576|step_loss:10.60576|step_ns_loss:0.67366|step_mlm_loss:9.93210|learning_rate:8.26e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+Iteration:   2%|▏         | 60/2549 [01:24<36:09,  1.15it/s]2024-11-21 23:08:25,604 - apps.tasks.lm_tasks.bert_mlperf_trainer - Rank 0, PID 3045226 - info     - epoch:0|local_step:61|global_step:61|average_loss:10.55203|step_loss:10.55203|step_ns_loss:0.65672|step_mlm_loss:9.89531|learning_rate:8.40e-07|eval_step:0.00000|validation_average_loss:0.00000|validation_total_loss:0.00000|validation_mlm_loss:0.00000|validation_ns_loss:0.00000
+^C
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.22/BertLarge.out ~/HW7-BertLarge-8tasks-1stlog.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/BertLarge/112124.23/BertLarge.out ~/HW7-BertLarge-8tasks-2ndlog.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ sed -i 's/--ntasks-per-node 16/--ntasks-per-node 8/' BertLarge.sh
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ git diff
+diff --git a/07_AITestbeds/Sambanova/bert/BertLarge.sh b/07_AITestbeds/Sambanova/bert/BertLarge.sh
+index e835710..2c96b3d 100755
+--- a/07_AITestbeds/Sambanova/bert/BertLarge.sh
++++ b/07_AITestbeds/Sambanova/bert/BertLarge.sh
+@@ -56,7 +56,7 @@ fi
+ #######################
+ echo "RUN" >> ${OUTPUT_PATH} 2>&1
+ env >> ${OUTPUT_PATH} 2>&1
+-/usr/local/bin/sbatch --output=${HOME}/slurm-%A.out --ntasks 16 --gres=rdu:8 --ntasks-per-node 16  --nodes 1 --cpus-per-task=8  ${PROJ_DIR}/BertLarge_run.sh $1 >> ${OUTPUT_PATH} 2>&1
++/usr/local/bin/sbatch --output=${HOME}/slurm-%A.out --ntasks 8 --gres=rdu:8 --ntasks-per-node 8  --nodes 1 --cpus-per-task=8  ${PROJ_DIR}/BertLarge_run.sh $1 >> ${OUTPUT_PATH} 2>&1
+
+ #######################
+ echo "Machine state After: " >> ${OUTPUT_PATH} 2>&1
+diff --git a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+index ef43361..f44a941 100644
+--- a/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
++++ b/07_AITestbeds/Sambanova/bert/BertLarge_run.sh
+@@ -63,8 +63,8 @@ FI_VERBS_IFACE=eth
+ #SAMBA_SEED=256
+ #DISALLOW_VISUALIZE=True
+ #OMP_NUM_THREADS=8
+-  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+-  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  #COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 5005 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 570000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
++  COMMAND="/usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/modules/configs/mlm_24layer_ml_perf_config.json --tokenizer_name bert-large-uncased --module_name mlm_ns --task_name mlm_ns --max_seq_length 128 -b 256 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size  256  --data_dir /data/ANL/wikicorpus_en --cache_dir ${OUTDIR}/cache/ --max_predictions_per_seq 20  --warmup_steps 12500 --max_steps 250000 --steps_this_run 505 --logging_steps 1 --weight_decay 0.01 --learning_rate 0.000175  --non_split_head --dense_adam --data-parallel --reduce-on-rdu --adam_beta2 0.98 --max_grad_norm_clip 1.0 --min_throughput 560000  --max_throughput 620000 --skip_checkpoint  --pef=${OUTDIR}/bertlrg/bertlrg.pef --log-level error --validate_stat_perf --validate_tying_plus_embed_train "
+ echo "RUN COMMAND: $COMMAND" >> ${OUTPUT_PATH} 2>&1
+ eval $COMMAND >> ${OUTPUT_PATH} 2>&1
+
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ rm -rf ~/BertLarge
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ ./BertLarge.sh
+Using /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.23/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cat slurm-43721.out
+cat: slurm-43721.out: No such file or directory
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cat ~/slurm-43721.out
+Using /home/stabrawa/BertLarge/112124.23/BertLarge.out for output
+Using /home/stabrawa/BertLarge/112124.23/BertLarge.out for output
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/ai-science-training-series/07_AITestbeds/Sambanova/bert/112124.23/BertLarge.out ~/HW7-BertLarge-8tasks-8pernode-1stlog
+.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ cp /home/stabrawa/BertLarge/112124.23/BertLarge.out ~/HW7-BertLarge-8tasks-8pernode-2ndlog.out
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$ exit
+Script done, file is /home/stabrawa/HW7.log
+stabrawa@sn30-r2-h2:~/ai-science-training-series/07_AITestbeds/Sambanova/bert$
